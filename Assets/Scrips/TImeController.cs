@@ -1,16 +1,17 @@
+using System;
 using UnityEngine;
 
 public class TImeController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField]private float startSpeed=1;
+
+    private void Start()
     {
-        
+        Time.timeScale = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Time.timeScale = Mathf.Lerp(0.5f, 1, startSpeed/10);
     }
 }
