@@ -6,12 +6,16 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float forcePower = 10;
     [SerializeField] private float maxSpeed = 10, minSpeed = -10;
     [SerializeField] private float overlapCircleRadious = .5f;
+    [SerializeField] private Range rotatioinRange;
     private LayerMask obsticleMask;
     private Rigidbody2D playerRb;
+    private EffectsAndScoerController _effectsAndScoerController;
     private void Start()
     {
+        _effectsAndScoerController = GetComponent<EffectsAndScoerController>();
         obsticleMask = LayerMask.GetMask("Obstacle");
         playerRb = GetComponent<Rigidbody2D>();
+        playerRb.linearVelocityY = forcePower;
     }
 
     void Update()
@@ -24,7 +28,7 @@ public class PlayerMovementController : MonoBehaviour
 
         float ySpeed = playerRb.linearVelocityY;
         float lerpedValue = Mathf.Lerp(.5f, Map(ySpeed), .2f);
-        transform.rotation = Quaternion.Slerp(Quaternion.Euler(0,0,-40), Quaternion.Euler(0,0,120), lerpedValue);
+        transform.rotation = Quaternion.Slerp(Quaternion.Euler(0,0,rotatioinRange.lowerValue), Quaternion.Euler(0,0,rotatioinRange.upperValue), lerpedValue);
 
         Collider2D hit=Physics2D.OverlapCircle(transform.position, overlapCircleRadious, obsticleMask);
         if (hit != null)

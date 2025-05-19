@@ -1,0 +1,968 @@
+fileFormatVersion: 2
+guid: 338e0664dedd5bf47887d810045138b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1567134341487365948
+    second: X+uni png-21_0
+  - first:
+      213: 8522350292256677028
+    second: X+uni png-21_1
+  - first:
+      213: 6929012359412639168
+    second: X+uni png-21_2
+  - first:
+      213: 6092689054219534964
+    second: X+uni png-21_3
+  - first:
+      213: -1336964764286283115
+    second: X+uni png-21_4
+  - first:
+      213: -1283361212431841731
+    second: X+uni png-21_5
+  - first:
+      213: 6523728976777791873
+    second: X+uni png-21_6
+  - first:
+      213: -2936199081697065285
+    second: X+uni png-21_7
+  - first:
+      213: -2631861258595980383
+    second: X+uni png-21_8
+  - first:
+      213: 2556801705501279116
+    second: X+uni png-21_9
+  - first:
+      213: 1067562994109839089
+    second: X+uni png-21_10
+  - first:
+      213: -8670127699877693461
+    second: X+uni png-21_11
+  - first:
+      213: -4460135905386740926
+    second: X+uni png-21_12
+  - first:
+      213: 2461371837874986190
+    second: X+uni png-21_13
+  - first:
+      213: -4188436954084700203
+    second: X+uni png-21_14
+  - first:
+      213: -7395546398117817951
+    second: X+uni png-21_15
+  - first:
+      213: 471250285699617328
+    second: X+uni png-21_16
+  - first:
+      213: -3675774638437800245
+    second: X+uni png-21_17
+  - first:
+      213: -7310437143973350636
+    second: X+uni png-21_18
+  - first:
+      213: 4836452162089675299
+    second: X+uni png-21_19
+  - first:
+      213: 3966485342297684922
+    second: X+uni png-21_20
+  - first:
+      213: -6710011031952830219
+    second: X+uni png-21_21
+  - first:
+      213: -5173995287089149277
+    second: X+uni png-21_22
+  - first:
+      213: -5566875261196921563
+    second: X+uni png-21_23
+  - first:
+      213: 192026747880637842
+    second: X+uni png-21_24
+  - first:
+      213: -8230073946148707714
+    second: X+uni png-21_25
+  - first:
+      213: -4749315084085631023
+    second: X+uni png-21_26
+  - first:
+      213: 379601198357856912
+    second: X+uni png-21_27
+  - first:
+      213: 947390240184440024
+    second: X+uni png-21_28
+  - first:
+      213: -127561889037216137
+    second: X+uni png-21_29
+  - first:
+      213: -4743068192047694039
+    second: X+uni png-21_30
+  - first:
+      213: 3365047570174965776
+    second: X+uni png-21_31
+  - first:
+      213: 3938302840084534618
+    second: X+uni png-21_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: X+uni png-21_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 101
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c074549e9b604ae0800000000000000
+      internalID: -1567134341487365948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 101
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acd76dff68754670800000000000000
+      internalID: 8522350292256677028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 105
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5e417870cc82060800000000000000
+      internalID: 6929012359412639168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 119
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4728aa31a649d8450800000000000000
+      internalID: 6092689054219534964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 123
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592908361a5227de0800000000000000
+      internalID: -1336964764286283115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 100
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d364c7ed6c5903ee0800000000000000
+      internalID: -1283361212431841731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_6
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 78
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18943cfa0f0f88a50800000000000000
+      internalID: 6523728976777791873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_7
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb64e99ed768047d0800000000000000
+      internalID: -2936199081697065285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_8
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab26472120c97bd0800000000000000
+      internalID: -2631861258595980383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_9
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 78
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c834489ca959b7320800000000000000
+      internalID: 2556801705501279116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_10
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 78
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6f44f03eeb0de00800000000000000
+      internalID: 1067562994109839089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_11
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 80
+        width: 9
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7f3831bc48da780800000000000000
+      internalID: -8670127699877693461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_12
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 78
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243457d560a6a12c0800000000000000
+      internalID: -4460135905386740926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_13
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 79
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc50b845ac882220800000000000000
+      internalID: 2461371837874986190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_14
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 59
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df89a318ceafd5c0800000000000000
+      internalID: -4188436954084700203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_15
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 96
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a19444fbbdbd5990800000000000000
+      internalID: -7395546398117817951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 59
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0325d6753a73a8600800000000000000
+      internalID: 471250285699617328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_17
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 78
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6668101760dfcc0800000000000000
+      internalID: -3675774638437800245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_18
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 78
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413b5a0662c1c8a90800000000000000
+      internalID: -7310437143973350636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_19
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 78
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a6686ed978e1340800000000000000
+      internalID: 4836452162089675299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 79
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb727a4769cb0730800000000000000
+      internalID: 3966485342297684922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_21
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 79
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0df71848041e2a0800000000000000
+      internalID: -6710011031952830219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_22
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 79
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa818b03b64238b0800000000000000
+      internalID: -5173995287089149277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_23
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 78
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525927bc17c7eb2b0800000000000000
+      internalID: -5566875261196921563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_24
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 79
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2958cce4f473aa200800000000000000
+      internalID: 192026747880637842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_25
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 77
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72eb9cc957e8cd80800000000000000
+      internalID: -8230073946148707714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_26
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 79
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7ebae081b071eb0800000000000000
+      internalID: -4749315084085631023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_27
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 78
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092ce68574d944500800000000000000
+      internalID: 379601198357856912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_28
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 67
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d49dd9676ec52d00800000000000000
+      internalID: 947390240184440024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_29
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 77
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7761f05432fca3ef0800000000000000
+      internalID: -127561889037216137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_30
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 78
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ffa83fb9c3d2eb0800000000000000
+      internalID: -4743068192047694039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_31
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 78
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018f190bfec03be20800000000000000
+      internalID: 3365047570174965776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X+uni png-21_32
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 79
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5596292199a7a630800000000000000
+      internalID: 3938302840084534618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

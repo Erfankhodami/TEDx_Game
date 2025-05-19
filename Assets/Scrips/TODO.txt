@@ -1,0 +1,5 @@
+build a web version for it
+add the arts to the game
+make the winging asset(animation)
+make it playable
+just a high score
