@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      X profile insta-04_0: 5405265697993038604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

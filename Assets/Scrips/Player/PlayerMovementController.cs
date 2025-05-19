@@ -33,8 +33,14 @@ public class PlayerMovementController : MonoBehaviour
         Collider2D hit=Physics2D.OverlapCircle(transform.position, overlapCircleRadious, obsticleMask);
         if (hit != null)
         {
-            print("lost");
-            Time.timeScale = 0;
+            if (hit.gameObject.tag == "Wall")
+            {
+                print("lost");
+                Time.timeScale = 0;    
+            }else if (hit.gameObject.tag == "Glass")
+            {
+             print("glass");   
+            }
         }
     }
 

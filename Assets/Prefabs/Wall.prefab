@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: -637025617160999576}
   - component: {fileID: 698603331142970403}
   m_Layer: 6
-  m_Name: Obstacle
-  m_TagString: Untagged
+  m_Name: Wall
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53773e74e78d6f14a808ec25332a4d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingSpeed: 12
 --- !u!61 &698603331142970403
 BoxCollider2D:
   m_ObjectHideFlags: 0

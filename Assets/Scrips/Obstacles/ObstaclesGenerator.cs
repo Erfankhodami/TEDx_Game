@@ -38,12 +38,8 @@ public class ObstaclesGenerator : MonoBehaviour
         
         GameObject obstacle=Instantiate(obstaclePrefab, transform.position + offset, quaternion.identity);
         
-        GameObject glass=Instantiate(glassPrefab,obstacle.transform);
+        GameObject glass=Instantiate(glassPrefab,obstacle.transform.position-dist/2,Quaternion.identity);
 
-        glass.transform.localPosition = Vector3.zero;
-        var transformPosition = glass.transform.position;
-        transformPosition.y += dist.y/2;
-        glass.transform.position = transformPosition;
         
         var transformLocalScale = glass.transform.localScale;
         transformLocalScale.y = dist.y-obstacle.transform.localScale.y;

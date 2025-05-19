@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ObstaclesController : MonoBehaviour
 {
-    [SerializeField] private float movingSpeed=10;
+    private float movingSpeed=12;
 
     private void Start()
     {
