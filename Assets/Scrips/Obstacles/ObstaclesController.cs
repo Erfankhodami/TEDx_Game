@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ObstaclesController : MonoBehaviour
 {
-    private float movingSpeed=12;
+    private float movingSpeed=15;
 
     private void Start()
     {

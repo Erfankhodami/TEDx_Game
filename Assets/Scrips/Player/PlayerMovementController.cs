@@ -10,8 +10,10 @@ public class PlayerMovementController : MonoBehaviour
     private LayerMask obsticleMask;
     private Rigidbody2D playerRb;
     private EffectsAndScoerController _effectsAndScoerController;
+    private PlayerAnimationController _playerAnimationController;
     private void Start()
     {
+        _playerAnimationController = GetComponent<PlayerAnimationController>();
         _effectsAndScoerController = GetComponent<EffectsAndScoerController>();
         obsticleMask = LayerMask.GetMask("Obstacle");
         playerRb = GetComponent<Rigidbody2D>();
@@ -24,6 +26,7 @@ public class PlayerMovementController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             playerRb.linearVelocityY = forcePower;
+            _playerAnimationController.RunIenumerator();
         }
 
         float ySpeed = playerRb.linearVelocityY;
@@ -36,10 +39,11 @@ public class PlayerMovementController : MonoBehaviour
             if (hit.gameObject.tag == "Wall")
             {
                 print("lost");
-                Time.timeScale = 0;    
+                //Time.timeScale = 0;    
             }else if (hit.gameObject.tag == "Glass")
             {
              print("glass");   
+             _effectsAndScoerController.CallEffect(hit.gameObject);
             }
         }
     }

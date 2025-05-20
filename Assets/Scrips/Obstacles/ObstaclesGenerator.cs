@@ -16,16 +16,12 @@ public class ObstaclesGenerator : MonoBehaviour
     [SerializeField] private Range obstacleRandomRange;
     [SerializeField] private Range spaceSizeRange;
 
+    private float scale;
     private Transform origin;
     void Start()
     {
         InvokeRepeating("GenerateObstacles",1,2);
     }
-    void Update()
-    {
-        
-    }
-
     void GenerateObstacles()
     {
         Vector3 offset = new Vector3(0,
@@ -40,9 +36,15 @@ public class ObstaclesGenerator : MonoBehaviour
         
         GameObject glass=Instantiate(glassPrefab,obstacle.transform.position-dist/2,Quaternion.identity);
 
-        
+
+        scale = dist.y - obstacle.transform.localScale.y;
         var transformLocalScale = glass.transform.localScale;
-        transformLocalScale.y = dist.y-obstacle.transform.localScale.y;
+        transformLocalScale.y = scale;
         glass.transform.localScale = transformLocalScale;
+    }
+
+    public float GetScale()
+    {
+        return scale;
     }
 }
