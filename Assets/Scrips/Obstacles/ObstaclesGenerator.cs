@@ -26,16 +26,18 @@ public class ObstaclesGenerator : MonoBehaviour
     {
         Vector3 offset = new Vector3(0,
             Random.Range(obstacleRandomRange.lowerValue, obstacleRandomRange.upperValue),0);
-        Instantiate(obstaclePrefab, transform.position + offset, quaternion.identity);
+        GameObject obstacle=Instantiate(obstaclePrefab, transform.position + offset, quaternion.identity);
+        obstacle.transform.parent = transform.parent;
         
         Vector3 dist=new Vector3(0,
             Random.Range(spaceSizeRange.lowerValue, spaceSizeRange.upperValue),0);
         offset += dist;
         
-        GameObject obstacle=Instantiate(obstaclePrefab, transform.position + offset, quaternion.identity);
+        obstacle=Instantiate(obstaclePrefab, transform.position + offset, quaternion.identity);
+        obstacle.transform.parent = transform.parent;
         
         GameObject glass=Instantiate(glassPrefab,obstacle.transform.position-dist/2,Quaternion.identity);
-
+        glass.transform.parent = transform.parent;
 
         scale = dist.y - obstacle.transform.localScale.y;
         var transformLocalScale = glass.transform.localScale;

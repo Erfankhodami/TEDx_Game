@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
+    public int score = 0;
     [SerializeField] private float forcePower = 10;
     [SerializeField] private float maxSpeed = 10, minSpeed = -10;
     [SerializeField] private float overlapCircleRadious = .5f;

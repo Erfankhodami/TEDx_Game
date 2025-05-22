@@ -1,5 +1,6 @@
 build a web version for it
-add the arts to the game
-make the winging asset(animation)
-make it playable
 just a high score
+//add the arts to the game
+//add post proccesing
+//make the winging asset(animation)
+//make it playable
