@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class ObstaclesController : MonoBehaviour
 {
-    private float movingSpeed=11;
+    public static float movingSpeed=11;
 
     private void Start()
     {
         Invoke("DestroyGm",10);
+        PlayerMovementController.OnGameOver += StopMoving;
     }
 
     void Update()
@@ -18,5 +19,10 @@ public class ObstaclesController : MonoBehaviour
     void DestroyGm()
     {
         Destroy(gameObject);
+    }
+
+    public void StopMoving()
+    {
+        movingSpeed=0;
     }
 }

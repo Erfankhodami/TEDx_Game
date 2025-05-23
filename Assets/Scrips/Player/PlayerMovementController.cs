@@ -8,12 +8,17 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float maxSpeed = 10, minSpeed = -10;
     [SerializeField] private float overlapCircleRadious = .5f;
     [SerializeField] private Range rotatioinRange;
+    private bool isGameOver=false;
     private LayerMask obsticleMask;
     private Rigidbody2D playerRb;
     private EffectsAndScoerController _effectsAndScoerController;
     private PlayerAnimationController _playerAnimationController;
+    private SceneMover _sceneMover;
+
+    public static event Action OnGameOver; 
     private void Start()
     {
+        _sceneMover = Camera.main.gameObject.GetComponent<SceneMover>();
         _playerAnimationController = GetComponent<PlayerAnimationController>();
         _effectsAndScoerController = GetComponent<EffectsAndScoerController>();
         obsticleMask = LayerMask.GetMask("Obstacle");
@@ -24,7 +29,7 @@ public class PlayerMovementController : MonoBehaviour
     void Update()
     {
         float clampedVelocity = Mathf.Clamp(playerRb.linearVelocityY, minSpeed, maxSpeed);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)&&!isGameOver)
         {
             playerRb.linearVelocityY = forcePower;
             _playerAnimationController.RunIenumerator();
@@ -37,10 +42,10 @@ public class PlayerMovementController : MonoBehaviour
         Collider2D hit=Physics2D.OverlapCircle(transform.position, overlapCircleRadious, obsticleMask);
         if (hit != null)
         {
-            if (hit.gameObject.tag == "Wall")
+            if (hit.gameObject.tag == "Wall"&&!isGameOver)
             {
                 print("lost");
-                //Time.timeScale = 0;    
+                LooseGame();
             }else if (hit.gameObject.tag == "Glass")
             {
              print("glass");   
@@ -53,5 +58,13 @@ public class PlayerMovementController : MonoBehaviour
     {
         float mapped = (value - minSpeed) / (maxSpeed - minSpeed);
         return mapped;
+    }
+
+    void LooseGame()
+    {
+        float throwBackForce = 5;
+        isGameOver = true;
+        OnGameOver.Invoke();
+        playerRb.AddForce((Vector2.left + Vector2.up)*throwBackForce,ForceMode2D.Impulse);
     }
 }
