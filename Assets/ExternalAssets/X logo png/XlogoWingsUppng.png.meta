@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      XlogoWingsUppng_0: -8742317672078620092
+      XlogoWingsUppng_1: -4340747207094361502
+      XlogoWingsUppng_2: -5645060212450143557
+      XlogoWingsUppng_3: -410933885248700068
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

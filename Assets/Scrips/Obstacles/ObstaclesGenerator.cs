@@ -18,12 +18,18 @@ public class ObstaclesGenerator : MonoBehaviour
 
     private float scale;
     private Transform origin;
+    private bool isGameActive = true;
     void Start()
     {
+        PlayerMovementController.OnGameOver += DisableInstantiating;
         InvokeRepeating("GenerateObstacles",1,2);
     }
     void GenerateObstacles()
     {
+        if (!isGameActive)
+        {
+            return;
+        }
         Vector3 offset = new Vector3(0,
             Random.Range(obstacleRandomRange.lowerValue, obstacleRandomRange.upperValue),0);
         GameObject obstacle=Instantiate(obstaclePrefab, transform.position + offset, quaternion.identity);
@@ -48,5 +54,10 @@ public class ObstaclesGenerator : MonoBehaviour
     public float GetScale()
     {
         return scale;
+    }
+
+    void DisableInstantiating()
+    {
+        isGameActive = false;
     }
 }

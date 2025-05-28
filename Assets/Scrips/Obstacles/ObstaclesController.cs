@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ObstaclesController : MonoBehaviour
 {
-    public static float movingSpeed=11;
+    private float movingSpeed=11;
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class ObstaclesController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void StopMoving()
+    private void StopMoving()
     {
         movingSpeed=0;
     }

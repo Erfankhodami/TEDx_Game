@@ -15,21 +15,23 @@ public class PlayerMovementController : MonoBehaviour
     private PlayerAnimationController _playerAnimationController;
     private SceneMover _sceneMover;
 
-    public static event Action OnGameOver; 
+    public static event Action OnGameOver;
     private void Start()
     {
+        Time.timeScale = 0;
         _sceneMover = Camera.main.gameObject.GetComponent<SceneMover>();
         _playerAnimationController = GetComponent<PlayerAnimationController>();
         _effectsAndScoerController = GetComponent<EffectsAndScoerController>();
         obsticleMask = LayerMask.GetMask("Obstacle");
         playerRb = GetComponent<Rigidbody2D>();
         playerRb.linearVelocityY = forcePower;
+        playerRb.simulated = false;
     }
 
     void Update()
     {
-        float clampedVelocity = Mathf.Clamp(playerRb.linearVelocityY, minSpeed, maxSpeed);
-        if (Input.GetKeyDown(KeyCode.Space)&&!isGameOver)
+        playerRb.linearVelocityY=Mathf.Clamp(playerRb.linearVelocityY, minSpeed, maxSpeed);
+        if (Input.GetMouseButtonDown(0)&&!isGameOver)
         {
             playerRb.linearVelocityY = forcePower;
             _playerAnimationController.RunIenumerator();
@@ -52,6 +54,11 @@ public class PlayerMovementController : MonoBehaviour
              _effectsAndScoerController.CallEffect(hit.gameObject);
             }
         }
+
+        if (transform.position.y < -100)
+        {
+            LooseGame();
+        }
     }
 
     float Map(float value)
@@ -66,5 +73,15 @@ public class PlayerMovementController : MonoBehaviour
         isGameOver = true;
         OnGameOver.Invoke();
         playerRb.AddForce((Vector2.left + Vector2.up)*throwBackForce,ForceMode2D.Impulse);
+    }
+
+    public void StartGame()
+    {
+        Time.timeScale = 1;
+        playerRb.simulated = true;
+    }
+    public void DisableSubscriptions()
+    {
+        OnGameOver = null;
     }
 }
