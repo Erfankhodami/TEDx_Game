@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,8 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject startPanel;
     [SerializeField] private GameObject inputNumberPanel;
     [SerializeField] private TMP_InputField _inputField;
+    [SerializeField] private TextMeshProUGUI highestScoreText;
+    [SerializeField] private GameObject newScorePanel;
     [SerializeField] private float panelOpeningSpeed=1;
     private Vector3 panelLowSize = new Vector3(1, 1, 1);
     private Vector3 panelHighSize = new Vector3(10,10,1);
@@ -18,10 +21,12 @@ public class UIController : MonoBehaviour
     private PlayerMovementController _playerMovementController;
     private void Start()
     {
+        Application.targetFrameRate = 60;
         _userDataController = Camera.main.gameObject.GetComponent<UserDataController>();
         _playerMovementController = GameObject.Find("Player").GetComponent<PlayerMovementController>();
         startPanel.transform.localScale = panelLowSize;
         loosePanel.transform.localScale = panelHighSize;
+        newScorePanel.transform.localScale = panelHighSize;
         PlayerMovementController.OnGameOver += Loose;
     }
 
@@ -95,5 +100,26 @@ public class UIController : MonoBehaviour
     {
         inputNumberPanel.SetActive(false);
         startPanel.SetActive(true);
+    }
+
+    public void UpdateHighestScoreText(int score)
+    {
+        highestScoreText.text = "Best: " + score;
+    }
+
+    public void CelebrateNewScore()
+    {
+        StartCoroutine(BringUpNewScorePanel());
+    }
+
+    IEnumerator BringUpNewScorePanel()
+    {
+        newScorePanel.SetActive(true);
+        while (newScorePanel.transform.localScale.x>panelLowSize.x)
+        {
+            newScorePanel.transform.localScale =
+                Vector3.Slerp(newScorePanel.transform.localScale, panelLowSize, panelOpeningSpeed/10);
+            yield return null;
+        }
     }
 }
