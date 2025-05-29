@@ -43,12 +43,19 @@ public class UIController : MonoBehaviour
     private IEnumerator BringUpLoosePanel()
     {
         loosePanel.SetActive(true);
-        while (loosePanel.transform.localScale.x>1)
+        int x = 0;
+        while (loosePanel.transform.localScale.x > panelLowSize.x)
         {
             loosePanel.transform.localScale = Vector3.Slerp(loosePanel.transform.localScale, panelLowSize,
                 panelOpeningSpeed / 10);
+            x++;
+            if (x > 300)
+            {
+                break;
+            }
             yield return null;
         }
+        Time.timeScale = 0;
     }
 
     public void StartGame()

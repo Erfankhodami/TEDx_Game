@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
@@ -17,6 +18,7 @@ public class PlayerMovementController : MonoBehaviour
     private PlayerAnimationController _playerAnimationController;
     private UserDataController _userDataController;
     private UIController _uiController;
+    private DataSender _dataSender;
     private SceneMover _sceneMover;
 
     public static event Action OnGameOver;
@@ -24,6 +26,7 @@ public class PlayerMovementController : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0;
+        _dataSender = Camera.main.gameObject.GetComponent<DataSender>();
         _uiController = Camera.main.gameObject.GetComponent<UIController>();
         _userDataController = Camera.main.gameObject.GetComponent<UserDataController>();
         _sceneMover = Camera.main.gameObject.GetComponent<SceneMover>();
@@ -101,8 +104,9 @@ public class PlayerMovementController : MonoBehaviour
         {
             _userDataController.SetHighestScore(score);
             _uiController.CelebrateNewScore();
+            string data = JsonUtility.ToJson(_userDataController.GetUserData());
+            _dataSender?.PostData("/scoreboard",data);
         }
-
         float throwBackForce = 5;
         isGameOver = true;
         OnGameOver.Invoke();
