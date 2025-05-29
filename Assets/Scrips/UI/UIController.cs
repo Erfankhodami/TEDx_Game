@@ -7,18 +7,21 @@ using UnityEngine.SceneManagement;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI tmpro;
-    [SerializeField] private GameObject LoosePanel;
+    [SerializeField] private GameObject loosePanel;
     [SerializeField] private GameObject startPanel;
+    [SerializeField] private GameObject inputNumberPanel;
+    [SerializeField] private TMP_InputField _inputField;
     [SerializeField] private float panelOpeningSpeed=1;
     private Vector3 panelLowSize = new Vector3(1, 1, 1);
     private Vector3 panelHighSize = new Vector3(10,10,1);
-    
+    private UserDataController _userDataController;
     private PlayerMovementController _playerMovementController;
     private void Start()
     {
+        _userDataController = Camera.main.gameObject.GetComponent<UserDataController>();
         _playerMovementController = GameObject.Find("Player").GetComponent<PlayerMovementController>();
         startPanel.transform.localScale = panelLowSize;
-        LoosePanel.transform.localScale = panelHighSize;
+        loosePanel.transform.localScale = panelHighSize;
         PlayerMovementController.OnGameOver += Loose;
     }
 
@@ -34,10 +37,10 @@ public class UIController : MonoBehaviour
 
     private IEnumerator BringUpLoosePanel()
     {
-        LoosePanel.SetActive(true);
-        while (LoosePanel.transform.localScale.x>1)
+        loosePanel.SetActive(true);
+        while (loosePanel.transform.localScale.x>1)
         {
-            LoosePanel.transform.localScale = Vector3.Slerp(LoosePanel.transform.localScale, panelLowSize,
+            loosePanel.transform.localScale = Vector3.Slerp(loosePanel.transform.localScale, panelLowSize,
                 panelOpeningSpeed / 10);
             yield return null;
         }
@@ -65,5 +68,32 @@ public class UIController : MonoBehaviour
         _playerMovementController.DisableSubscriptions();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void BringUpNumberInputPanel()
+    {
+        inputNumberPanel.SetActive(true);   
+        startPanel.SetActive(false);
+
+    }
+    public void GetNumber()
+    {
+        GetNumberFromInputField();
+    }
+    public void GetNumberFromInputField()
+    {
+        string result = _inputField.text;
+        if (result.Length != 11)
+        {
+            return;
+        }
+        BringDownNumberInputPanelAndBringUpStartPanel();
+        PlayerPrefs.SetString("number",result);
+        _userDataController.SetNumber(result);
+    }
     
+    public void BringDownNumberInputPanelAndBringUpStartPanel()
+    {
+        inputNumberPanel.SetActive(false);
+        startPanel.SetActive(true);
+    }
 }

@@ -46,11 +46,11 @@ public class PlayerMovementController : MonoBehaviour
         {
             if (hit.gameObject.tag == "Wall"&&!isGameOver)
             {
-                print("lost");
+                //print("lost");
                 LooseGame();
             }else if (hit.gameObject.tag == "Glass")
-            {
-             print("glass");   
+            { 
+                //print("glass");   
              _effectsAndScoerController.CallEffect(hit.gameObject);
             }
         }
