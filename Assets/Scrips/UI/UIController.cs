@@ -34,6 +34,7 @@ public class UIController : MonoBehaviour
 
     private IEnumerator BringUpLoosePanel()
     {
+        LoosePanel.SetActive(true);
         while (LoosePanel.transform.localScale.x>1)
         {
             LoosePanel.transform.localScale = Vector3.Slerp(LoosePanel.transform.localScale, panelLowSize,
@@ -50,10 +51,10 @@ public class UIController : MonoBehaviour
 
     IEnumerator BringDownStartPanel()
     {
-        while (startPanel.transform.localScale.x<panelHighSize.x-.1f)
+        while (startPanel.transform.localScale.x<panelHighSize.x-.2f)
         {
             //print("bringing down");
-            startPanel.transform.localScale=Vector3.Slerp(startPanel.transform.localScale,panelHighSize,panelOpeningSpeed/10);
+            startPanel.transform.localScale=Vector3.Lerp(startPanel.transform.localScale,panelHighSize,panelOpeningSpeed/10);
             yield return null;
         }
         startPanel.SetActive(false);

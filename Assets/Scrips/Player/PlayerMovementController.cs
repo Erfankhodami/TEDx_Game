@@ -31,7 +31,7 @@ public class PlayerMovementController : MonoBehaviour
     void Update()
     {
         playerRb.linearVelocityY=Mathf.Clamp(playerRb.linearVelocityY, minSpeed, maxSpeed);
-        if (Input.GetMouseButtonDown(0)&&!isGameOver)
+        if ((Input.GetMouseButtonDown(0)||(Input.GetKeyDown(KeyCode.Space)))&&!isGameOver)
         {
             playerRb.linearVelocityY = forcePower;
             _playerAnimationController.RunIenumerator();
